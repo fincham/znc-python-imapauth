@@ -2,7 +2,7 @@ import imaplib
 
 import znc
 
-class catalystauth(znc.Module):
+class pyimapauth(znc.Module):
     description = "Python IMAP authentication"
     module_types = [znc.CModInfo.GlobalModule]
 
