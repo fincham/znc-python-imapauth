@@ -14,7 +14,7 @@ class pyimapauth(znc.Module):
         try:
             connection.login(imap_username, password)
         except Exception as e:
-            auth.RefuseLogin("Catalyst authentication failed")
+            auth.RefuseLogin("IMAP authentication failed")
             return znc.HALT
         else:
             connection.logout()
